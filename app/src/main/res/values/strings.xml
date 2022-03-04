@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidUI</string>
+    <string name="intro_bienvenido">Bienvenido</string>
+    <string name="intro_disfrutar">Disfrutar</string>
+    <string name="intro_red_social">Red Social</string>
+
+    <string name="intro_bienvenido_desc">a mi app; slide 1</string>
+    <string name="intro_disfrutar_desc">desc. slide 2</string>
+    <string name="intro_red_social_desc">desc. slide 3</string>
+</resources>
