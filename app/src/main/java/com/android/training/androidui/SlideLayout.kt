@@ -4,11 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 
-class MainActivity : AppCompatActivity() {
-
+class SlideLayout : AppCompatActivity() {
     private lateinit var slideAdapter: SliderAdapter
     private lateinit var introActivityViewPager : ViewPager
     private lateinit var botonSaltarPager : Button
@@ -25,7 +23,5 @@ class MainActivity : AppCompatActivity() {
         botonSaltarPager.setOnClickListener {
             startActivity(Intent(this,SplashScreenActivity::class.java))
         }
-
-
     }
 }

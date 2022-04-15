@@ -7,4 +7,6 @@
     <string name="intro_bienvenido_desc">a mi app; slide 1</string>
     <string name="intro_disfrutar_desc">desc. slide 2</string>
     <string name="intro_red_social_desc">desc. slide 3</string>
+
+    <string name="saltar_intro_activty">SALTAR</string>
 </resources>
