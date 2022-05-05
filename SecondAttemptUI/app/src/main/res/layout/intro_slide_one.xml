@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slide_layout_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/slide_layout_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_intro_slide1"
+        />
+
+    <TextView
+        android:id="@+id/slide_layout_textview_header"
+        android:layout_below="@+id/slide_layout_imageview"
+        android:layout_centerHorizontal="true"
+        android:text="Hola"
+        android:textColor="@color/textteal_200"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/slide_layout_textview_description"
+        android:layout_below="@+id/slide_layout_textview_header"
+        android:layout_centerHorizontal="true"
+        android:text="desc"
+        android:textColor="@color/textteal_200"
+        android:textSize="19dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/slide_layout_textview_dot_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_alignRight="@+id/slide_layout_textview_dot_two"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="."
+        android:textSize="80dp"
+        />
+
+    <TextView
+        android:id="@+id/slide_layout_textview_dot_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:text="."
+        android:textSize="80dp"
+        />
+
+    <TextView
+        android:id="@+id/slide_layout_textview_dot_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/slide_layout_textview_dot_two"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:text="."
+        android:textSize="80dp"
+        />
+
+</RelativeLayout>

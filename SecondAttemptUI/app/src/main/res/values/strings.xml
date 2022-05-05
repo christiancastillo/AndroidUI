@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Second AttemptUI</string>
+    <string name="header_slide_one">Header_slide one</string>
+    <string name="header_slide_two">Header_slide two</string>
+    <string name="header_slide_three">Header_slide three</string>
+
+    <string name="header_description_one">Descripcion uno</string>
+    <string name="header_description_two">Descripcion dos</string>
+    <string name="header_description_three">Descripcion tres</string>
+
+    <string name="button_intro_activity_next">Saltar</string>
 </resources>
