@@ -21,7 +21,7 @@ class IntroActivity : AppCompatActivity() {
         viewPager = findViewById(R.id.intro_activity_pager)
         viewPager.setAdapter(sliderAdapter)
         nextButton.setOnClickListener{
-            startActivity(Intent(this@IntroActivity, MainActivity::class.java))
+            startActivity(Intent(this@IntroActivity, InicioActivity::class.java))
         }
 
     }

@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.PagerAdapter
 
 class SliderAdapter (var context : Context) : PagerAdapter(){
@@ -55,19 +56,19 @@ class SliderAdapter (var context : Context) : PagerAdapter(){
 
         when (position) {
             0 -> {
-                tvPointOne.setTextColor(context.resources.getColor(R.color.white))
-                tvPointTwo.setTextColor(context.resources.getColor(R.color.textteal_200))
-                tvPointThree.setTextColor(context.resources.getColor(R.color.textteal_200))
+                tvPointOne.setTextColor(ContextCompat.getColor(context,R.color.white))
+                tvPointTwo.setTextColor(ContextCompat.getColor(context,R.color.textteal_200))
+                tvPointThree.setTextColor(ContextCompat.getColor(context,R.color.textteal_200))
             }
             1 -> {
-                tvPointOne.setTextColor(context.resources.getColor(R.color.textteal_200))
-                tvPointTwo.setTextColor(context.resources.getColor(R.color.white))
-                tvPointThree.setTextColor(context.resources.getColor(R.color.textteal_200))
+                tvPointOne.setTextColor(ContextCompat.getColor(context,R.color.textteal_200))
+                tvPointTwo.setTextColor(ContextCompat.getColor(context,R.color.white))
+                tvPointThree.setTextColor(ContextCompat.getColor(context,R.color.textteal_200))
             }
             2 -> {
-                tvPointOne.setTextColor(context.resources.getColor(R.color.textteal_200))
-                tvPointTwo.setTextColor(context.resources.getColor(R.color.textteal_200))
-                tvPointThree.setTextColor(context.resources.getColor(R.color.white))
+                tvPointOne.setTextColor(ContextCompat.getColor(context,R.color.textteal_200))
+                tvPointTwo.setTextColor(ContextCompat.getColor(context,R.color.textteal_200))
+                tvPointThree.setTextColor(ContextCompat.getColor(context,R.color.white))
             }
         }
         container.addView(view)

@@ -9,4 +9,7 @@
     <string name="header_description_three">Descripcion tres</string>
 
     <string name="button_intro_activity_next">Saltar</string>
+
+    <string name="open">Abrir</string>
+    <string name="close">Cerrar</string>
 </resources>
