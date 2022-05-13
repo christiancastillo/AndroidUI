@@ -6,7 +6,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InicioActivity">
-    
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eres nuevo? pon tu primer post"
+            android:textSize="26dp"
+            android:layout_above="@+id/imageview_no_wifi"
+            android:textColor="@color/purple_500"/>
+        <ImageView
+            android:id="@+id/imageview_no_wifi"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:src="@drawable/ic_no_wifi"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/textview_no_wifi"
+            android:paddingTop="20dp"
+            android:layout_below="@+id/imageview_no_wifi"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:textSize="36dp"
+            android:text="NO WIFI CONNECTION"
+
+            />
+        
+    </RelativeLayout>
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/inicio_activity_navitagionview"
         android:layout_width="wrap_content"
@@ -19,5 +52,8 @@
         app:menu="@menu/navigation_menu">
 
     </com.google.android.material.navigation.NavigationView>
+
+
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

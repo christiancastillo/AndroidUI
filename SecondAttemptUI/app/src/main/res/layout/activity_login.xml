@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_button"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageview_login_header"
+        android:src="@drawable/ic_intro_slide1"
+        android:layout_height="180dp"
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
+        app:tint="#FFFFFFFF" />
+
+    <TextView
+        android:id="@+id/textview_tittleapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_login_header"
+        android:layout_centerHorizontal="true"
+        android:text="Baseball APP"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            >
+
+        </View>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_tittleapp"
+        android:drawableLeft="@drawable/ic_intro_slide1"
+        android:drawableTint="@color/white"
+        android:hint="username"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white" />
+
+</RelativeLayout>

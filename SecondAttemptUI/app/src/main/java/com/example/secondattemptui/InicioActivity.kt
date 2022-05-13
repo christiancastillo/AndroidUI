@@ -3,6 +3,7 @@ package com.example.secondattemptui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.view.MenuItem
 import android.widget.Button
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -23,8 +24,9 @@ class InicioActivity  : AppCompatActivity() {
         navigationView = findViewById(R.id.inicio_activity_navitagionview) as NavigationView
 
 
-        toggle = ActionBarDrawerToggle(this, layout, R.string.open, R.string.close)
+        toggle = ActionBarDrawerToggle(this,layout,R.string.open, R.string.close)
         layout.addDrawerListener(toggle)
+        supportActionBar!!.setHomeButtonEnabled(true)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         navigationView.setNavigationItemSelectedListener {
             when(it.itemId){
@@ -40,5 +42,10 @@ class InicioActivity  : AppCompatActivity() {
             return true
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onPostCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+        super.onPostCreate(savedInstanceState, persistentState)
+        toggle.syncState()
     }
 }

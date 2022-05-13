@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SecondAttemptUI">
-        <activity android:name=".InicioActivity"
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InicioActivity"
             android:exported="false"
-            android:theme="@style/Theme.SecondAttemptUIInicioActivity"/>
+            android:theme="@style/Theme.SecondAttemptUIInicioActivity" />
         <activity
             android:name=".IntroActivity"
             android:exported="false" />
